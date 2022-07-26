@@ -1,5 +1,5 @@
 {
-  "npmScope": "radiology",
+  "npmScope": "app",
   "affected": {
     "defaultBase": "main"
   },

@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/registers/src",
+  "prefix": "lib",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/registers"],
+      "options": {
+        "jestConfig": "libs/registers/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/registers/**/*.ts",
+          "libs/registers/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

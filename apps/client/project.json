@@ -1,8 +1,7 @@
 {
   "projectType": "application",
-  "root": "apps/client",
   "sourceRoot": "apps/client/src",
-  "prefix": "radiology",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

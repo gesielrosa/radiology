@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/criteria/src",
+  "prefix": "lib",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/criteria"],
+      "options": {
+        "jestConfig": "libs/criteria/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/criteria/**/*.ts", "libs/criteria/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

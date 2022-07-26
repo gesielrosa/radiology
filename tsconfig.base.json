@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@lib/criteria": ["libs/criteria/src/index.ts"],
+      "@lib/image-types": ["libs/image-types/src/index.ts"],
+      "@lib/institutions": ["libs/institutions/src/index.ts"],
+      "@lib/registers": ["libs/registers/src/index.ts"],
+      "@lib/users": ["libs/users/src/index.ts"],
+      "@lib/auth": ["libs/auth/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

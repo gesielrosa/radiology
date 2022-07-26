@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/image-types/src",
+  "prefix": "lib",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/image-types"],
+      "options": {
+        "jestConfig": "libs/image-types/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/image-types/**/*.ts",
+          "libs/image-types/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

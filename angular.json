@@ -1,7 +1,12 @@
 {
   "version": 2,
   "projects": {
+    "auth": "libs/auth",
     "client": "apps/client",
-    "client-e2e": "apps/client-e2e"
+    "criteria": "libs/criteria",
+    "image-types": "libs/image-types",
+    "institutions": "libs/institutions",
+    "registers": "libs/registers",
+    "users": "libs/users"
   }
 }
