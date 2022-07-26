@@ -15,7 +15,8 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/client/src/favicon.ico", "apps/client/src/assets"],
         "styles": ["apps/client/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "allowedCommonJsDependencies": ["eva-icons"]
       },
       "configurations": {
         "production": {
@@ -71,10 +72,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/client/src/**/*.ts",
-          "apps/client/src/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/client/src/**/*.ts", "apps/client/src/**/*.html"]
       }
     },
     "test": {

@@ -13,6 +13,9 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
       "@lib/criteria": ["libs/criteria/src/index.ts"],

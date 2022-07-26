@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~14.1.0",
+    "@angular/cdk": "~14.1.0",
     "@angular/common": "~14.1.0",
     "@angular/compiler": "~14.1.0",
     "@angular/core": "~14.1.0",
@@ -19,7 +20,10 @@
     "@angular/platform-browser": "~14.1.0",
     "@angular/platform-browser-dynamic": "~14.1.0",
     "@angular/router": "~14.1.0",
+    "@nebular/eva-icons": "9.0.3",
+    "@nebular/theme": "^9.0.3",
     "@nrwl/angular": "^14.4.3",
+    "eva-icons": "^1.1.2",
     "rxjs": "~7.4.0",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.4"
@@ -38,6 +42,7 @@
     "@nrwl/jest": "^14.4.3",
     "@nrwl/linter": "^14.4.3",
     "@nrwl/workspace": "^14.4.3",
+    "@schematics/angular": "~14.1.0",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "5.31.0",
