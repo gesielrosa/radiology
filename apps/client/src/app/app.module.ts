@@ -1,12 +1,20 @@
+import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NbLayoutModule, NbThemeModule} from '@nebular/theme';
 import {NbEvaIconsModule} from '@nebular/eva-icons';
+import {
+  NbContextMenuModule,
+  NbDialogModule,
+  NbLayoutModule,
+  NbMenuModule,
+  NbSidebarModule,
+  NbThemeModule,
+  NbUserModule,
+} from '@nebular/theme';
 
-import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +26,11 @@ import {AppRoutingModule} from './app-routing.module';
     NbThemeModule.forRoot({name: 'default'}),
     NbLayoutModule,
     NbEvaIconsModule,
+    NbSidebarModule.forRoot(),
+    NbMenuModule.forRoot(),
+    NbDialogModule.forRoot(),
+    NbUserModule,
+    NbContextMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

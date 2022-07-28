@@ -1,0 +1,13 @@
+:host {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  nb-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+}

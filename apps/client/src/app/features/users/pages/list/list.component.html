@@ -1,1 +1,17 @@
-<p>list works!</p>
+<nb-card>
+  <nb-card-header>
+    <h6>Usuários</h6>
+    <button nbButton status="primary" routerLink="add"><nb-icon icon="plus"></nb-icon></button>
+  </nb-card-header>
+  <nb-list>
+    <nb-list-item *ngFor="let item of items" [routerLink]="[item?.id]">
+      <span class="text-hint">{{ item?.id }}</span>
+      <div>
+        <div>
+          <strong>{{ item?.name }}</strong>
+        </div>
+        <div class="text-hint">{{ item?.email }}</div>
+      </div>
+    </nb-list-item>
+  </nb-list>
+</nb-card>

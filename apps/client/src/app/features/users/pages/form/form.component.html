@@ -1,1 +1,40 @@
-<p>form works!</p>
+<nb-card>
+  <nb-card-header>
+    <h6>Adicionar usuário</h6>
+  </nb-card-header>
+  <nb-card-body>
+    <form>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <input type="text" nbInput placeholder="Nome" fullWidth />
+        </div>
+        <div class="col-12 col-md-4">
+          <input type="text" nbInput placeholder="Email" fullWidth />
+        </div>
+        <div class="col-12 col-md-4">
+          <input type="text" nbInput placeholder="Senha" fullWidth />
+        </div>
+        <div class="col-12 col-md-6">
+          <nb-select placeholder="Instituição" fullWidth>
+            <nb-option value="1">Clínica 1</nb-option>
+            <nb-option value="2">Clínica 2</nb-option>
+            <nb-option value="3">Clínica 3</nb-option>
+            <nb-option value="4">Clínica 4</nb-option>
+          </nb-select>
+        </div>
+        <div class="col-12 col-md-6">
+          <nb-select placeholder="Função" fullWidth>
+            <nb-option value="admin">Admin</nb-option>
+            <nb-option value="responsible">Supervisor</nb-option>
+            <nb-option value="user">Usuário</nb-option>
+          </nb-select>
+        </div>
+      </div>
+    </form>
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="me-auto" nbButton status="danger" ghost>Remover</button>
+    <button nbButton status="basic" routerLink="/image-types">Cancelar</button>
+    <button nbButton status="primary">Salvar</button>
+  </nb-card-footer>
+</nb-card>

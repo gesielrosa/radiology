@@ -1,0 +1,28 @@
+:host {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  nb-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nb-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  nb-list-item {
+    cursor: pointer;
+    gap: 18px;
+
+    &:hover {
+      background-color: var(--background-basic-color-2);
+    }
+  }
+}

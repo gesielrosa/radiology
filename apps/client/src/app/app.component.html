@@ -1,11 +1,20 @@
 <nb-layout>
   <nb-layout-header fixed>
-    <!-- Insert header here -->
+    <h3>Radiology</h3>
+    <nb-user
+      class="ms-auto"
+      name="Izabel Cristina"
+      color="#f1f1f1"
+      title="Supervisor"
+      [nbContextMenu]="userMenuItems"
+      nbContextMenuTag="my-context-menu">
+    </nb-user>
   </nb-layout-header>
-
-  <nb-layout-column> </nb-layout-column>
-
-  <nb-layout-footer fixed>
-    <!-- Insert footer here -->
-  </nb-layout-footer>
+  <nb-sidebar>
+    <nb-menu [items]="menuItems"></nb-menu>
+  </nb-sidebar>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+  <nb-layout-footer fixed> Radiology © 2022 - All rights reserved. </nb-layout-footer>
 </nb-layout>

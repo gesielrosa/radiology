@@ -1,0 +1,16 @@
+:host {
+  nb-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nb-list-item {
+    cursor: pointer;
+    gap: 18px;
+
+    &:hover {
+      background-color: var(--background-basic-color-2);
+    }
+  }
+}

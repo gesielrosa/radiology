@@ -1,1 +1,22 @@
-<p>form works!</p>
+<nb-card>
+  <nb-card-header>
+    <h6>Adicionar tipo de imagem</h6>
+  </nb-card-header>
+  <nb-card-body>
+    <form>
+      <div class="row g-4">
+        <div class="col-12">
+          <input type="text" nbInput placeholder="Nome" fullWidth />
+        </div>
+        <div class="col-12">
+          <textarea rows="6" nbInput fullWidth placeholder="Descrição"></textarea>
+        </div>
+      </div>
+    </form>
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="me-auto" nbButton status="danger" ghost>Remover</button>
+    <button nbButton status="basic" routerLink="/image-types">Cancelar</button>
+    <button nbButton status="primary">Salvar</button>
+  </nb-card-footer>
+</nb-card>

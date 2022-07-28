@@ -1,1 +1,19 @@
-<p>form works!</p>
+<nb-card>
+  <nb-card-header>
+    <h6>Adicionar instituição</h6>
+  </nb-card-header>
+  <nb-card-body>
+    <form>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <input type="text" nbInput placeholder="Nome" fullWidth />
+        </div>
+      </div>
+    </form>
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="me-auto" nbButton status="danger" ghost>Remover</button>
+    <button nbButton status="basic" routerLink="/institutions">Cancelar</button>
+    <button nbButton status="primary">Salvar</button>
+  </nb-card-footer>
+</nb-card>

@@ -7,10 +7,9 @@ import {RouterModule} from '@angular/router';
     RouterModule.forChild([
       {
         path: '',
-        loadComponent: () => import('./pages/login/login.component').then(c => c.LoginComponent)
-      }
-    ])
-  ]
+        loadComponent: () => import('./pages/login/login.component').then((c) => c.LoginComponent),
+      },
+    ]),
+  ],
 })
-export class AuthModule {
-}
+export class AuthModule {}
