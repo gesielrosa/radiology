@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-12 col-md-8">
+    <nb-card>
+      <nb-card-header class="position-relative">
+        <h6>Informações do registro</h6>
+        <nb-badge text="PENDENTE" status="warning" position="center right"></nb-badge>
+      </nb-card-header>
+      <nb-card-body>
+        <form>
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <input type="text" nbInput placeholder="Cod. paciente" fullWidth />
+            </div>
+          </div>
+        </form>
+      </nb-card-body>
+      <nb-card-footer>
+        <button nbButton status="primary">Salvar</button>
+      </nb-card-footer>
+    </nb-card>
+    <nb-card>
+      <nb-card-header class="position-relative">
+        <h6>Critérios</h6>
+      </nb-card-header>
+      <nb-tabset>
+        <nb-tab [tabTitle]="image?.name" *ngFor="let image of imageTypes">
+          <p>{{ image?.description }}</p>
+          <nb-accordion>
+            <nb-accordion-item *ngFor="let category of categories">
+              <nb-accordion-item-header class="position-relative">
+                {{ category?.name }}
+                <nb-badge text="Preenchido" status="success" position="top end"></nb-badge>
+              </nb-accordion-item-header>
+              <nb-accordion-item-body>
+                <div class="mb-3">{{ category?.description }}</div>
+                <nb-radio-group>
+                  <nb-radio *ngFor="let criterion of category.criteria" [value]="criterion?.id">
+                    {{ criterion?.weight }}. {{ criterion?.name }}
+                  </nb-radio>
+                </nb-radio-group>
+              </nb-accordion-item-body>
+            </nb-accordion-item>
+          </nb-accordion>
+        </nb-tab>
+      </nb-tabset>
+    </nb-card>
+  </div>
+  <div class="col-12 col-md-4">
+    <nb-card>
+      <nb-card-header>
+        <h6>Histórico</h6>
+      </nb-card-header>
+      <nb-list>
+        <nb-list-item *ngFor="let item of historic">
+          <div>
+            <div>
+              <strong>{{ item?.name }}</strong>
+            </div>
+            <div class="text-hint">{{ item?.created_at | date }}</div>
+          </div>
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+  </div>
+</div>

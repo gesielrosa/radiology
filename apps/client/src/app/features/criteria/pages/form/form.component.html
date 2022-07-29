@@ -27,7 +27,9 @@
     <nb-card>
       <nb-card-header>
         <h6>Itens do critério</h6>
-        <button nbButton status="primary" (click)="openDialog(dialog)"><nb-icon icon="plus"></nb-icon></button>
+        <button nbButton status="primary" size="tiny" (click)="openDialog(dialog)">
+          <nb-icon icon="plus"></nb-icon>
+        </button>
       </nb-card-header>
       <nb-list>
         <nb-list-item *ngFor="let item of criterionItems" [routerLink]="[item?.id]">

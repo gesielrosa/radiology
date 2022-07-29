@@ -10,8 +10,12 @@ import {RouterModule} from '@angular/router';
         loadComponent: () => import('./pages/list/list.component').then((c) => c.ListComponent),
       },
       {
+        path: 'add',
+        loadComponent: () => import('./pages/form/form.component').then((c) => c.FormComponent),
+      },
+      {
         path: ':id',
-        loadComponent: () => import('./pages/details/details.component').then((c) => c.DetailsComponent),
+        loadComponent: () => import('./pages/form/form.component').then((c) => c.FormComponent),
       },
     ]),
   ],
