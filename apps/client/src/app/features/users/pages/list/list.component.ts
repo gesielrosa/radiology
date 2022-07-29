@@ -17,7 +17,7 @@ export class ListComponent implements OnInit {
     {
       id: '1',
       institution_id: '1',
-      name: 'Usuário 1',
+      name: 'Izabel Cristina',
       email: 'user1@gmail.com',
       role: 'user',
       created_at: new Date().toString(),
@@ -27,7 +27,7 @@ export class ListComponent implements OnInit {
     {
       id: '2',
       institution_id: '1',
-      name: 'Usuário 2',
+      name: 'Gesiel Rosa',
       email: 'user2@gmail.com',
       role: 'user',
       created_at: new Date().toString(),

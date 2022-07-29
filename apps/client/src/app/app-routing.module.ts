@@ -11,6 +11,14 @@ const ROUTES: Routes = [
     canActivate: [UnAuthGuard],
   },
   {
+    path: 'dashboard',
+    loadChildren: () => import('./features/dashboard/dashboard.module').then((m) => m.DashboardModule),
+    canActivate: [AuthGuard],
+    data: {
+      roles: ['super_admin', 'admin', 'responsible', 'user'],
+    },
+  },
+  {
     path: 'criteria',
     loadChildren: () => import('./features/criteria/criteria.module').then((m) => m.CriteriaModule),
     canActivate: [AuthGuard, UserRoleGuard],

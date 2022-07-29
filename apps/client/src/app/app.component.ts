@@ -10,8 +10,12 @@ export class AppComponent {
   public menuItems: NbMenuItem[] = [
     {
       title: 'Dashboard',
-      link: '/',
+      link: '/dashboard',
       icon: 'home-outline',
+      badge: {
+        text: 'Breve',
+        status: 'basic',
+      },
     },
     {
       title: 'Registros',
@@ -19,7 +23,16 @@ export class AppComponent {
       icon: 'list-outline',
     },
     {
+      title: 'Relatórios',
+      icon: 'bar-chart-outline',
+      badge: {
+        text: 'Breve',
+        status: 'basic',
+      },
+    },
+    {
       title: 'Configuraçōes',
+      icon: 'settings-outline',
       children: [
         {
           title: 'Tipos de Imagens',
@@ -39,7 +52,7 @@ export class AppComponent {
         {
           title: 'Instituições',
           link: '/institutions',
-          icon: 'home-outline',
+          icon: 'flag-outline',
         },
       ],
     },

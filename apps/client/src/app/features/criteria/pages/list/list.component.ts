@@ -16,7 +16,7 @@ export class ListComponent implements OnInit {
   public items: CriterionCategory[] = [
     {
       id: '1',
-      name: 'Category 1',
+      name: 'Identificação das imagens',
       description: 'Description 1',
       created_at: new Date().toString(),
       deleted_at: new Date().toString(),
@@ -24,7 +24,7 @@ export class ListComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Category 2',
+      name: 'Papila perfilada',
       description: 'Description 2',
       created_at: new Date().toString(),
       deleted_at: new Date().toString(),
@@ -32,7 +32,7 @@ export class ListComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Category 2',
+      name: 'Dobras de pele',
       description: 'Description 2',
       created_at: new Date().toString(),
       deleted_at: new Date().toString(),

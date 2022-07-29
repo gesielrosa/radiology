@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
     {
       id: '1',
       category_id: '1',
-      name: 'Item 1',
+      name: 'Identificação correta',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       weight: 1,
       created_at: new Date().toString(),
@@ -27,7 +27,7 @@ export class FormComponent implements OnInit {
     {
       id: '2',
       category_id: '2',
-      name: 'Item 2',
+      name: 'Incorreto, com sobreposição nas estruturas anatômicas',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       weight: 2,
       created_at: new Date().toString(),
@@ -37,7 +37,7 @@ export class FormComponent implements OnInit {
     {
       id: '3',
       category_id: '3',
-      name: 'Item 3',
+      name: 'Incorreto, falta dos dados do local do exame',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       weight: 3,
       created_at: new Date().toString(),
@@ -47,7 +47,7 @@ export class FormComponent implements OnInit {
     {
       id: '4',
       category_id: '4',
-      name: 'Item 4',
+      name: 'Incorreto, falta do nome da paciente ou data do exame',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       weight: 4,
       created_at: new Date().toString(),
