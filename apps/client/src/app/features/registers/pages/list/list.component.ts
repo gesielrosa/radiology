@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {Register} from '@lib/registers';
-import {NbButtonModule, NbCardModule, NbIconModule, NbListModule} from '@nebular/theme';
-import {RouterModule} from '@angular/router';
 import {DatePipe, NgForOf} from '@angular/common';
+import {Component, OnInit} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {NbButtonModule, NbCardModule, NbIconModule, NbListModule} from '@nebular/theme';
+
+import {Register} from '@lib/registers';
 
 @Component({
   selector: 'app-list',

@@ -1,5 +1,5 @@
+import {DatePipe, NgForOf, NgIf} from '@angular/common';
 import {Component, OnInit} from '@angular/core';
-import {Register} from '@lib/registers';
 import {
   NbAccordionModule,
   NbBadgeModule,
@@ -10,8 +10,6 @@ import {
   NbRadioModule,
   NbTabsetModule,
 } from '@nebular/theme';
-import {DatePipe, NgForOf, NgIf} from '@angular/common';
-import {CriterionCategory} from '@lib/criteria';
 import {ImageType} from '@lib/image-types';
 
 @Component({
